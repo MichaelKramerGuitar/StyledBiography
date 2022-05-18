@@ -85,17 +85,27 @@ three (3) page website and style it according to the requirements outlined below
 
 # File Structure
 ```html
-├───html
-│       army.html
-│       blog.html
-│       foundational-melodies.html
-│       freelance.html
-│       index.html
-│       speech.html
+└───html
+│   army.html
+│   blog.html
+│   foundational-melodies.html
+│   freelance.html
+│   index.html
+│   speech.html
 │
 ├───images
-│       ***image-assets-here***
-│
+│       armyblues-epk2021.jpg
+│       black-hole.PNG
+│       dizzy.jpg
+│       ellington.jpg
+│       michael-army.jpg
+│       michael-speech.jpg
+│       michael1.PNG
+│       michael2.PNG
+│       pie-face1.jpg
+│       pie-face2.jpg
+│       superstringlogo.PNG
+│       triangles.PNG
 └───videos
-        ***video-assets-here***
+intro.mp4
 ```
