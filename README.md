@@ -92,20 +92,20 @@ three (3) page website and style it according to the requirements outlined below
 │   freelance.html
 │   index.html
 │   speech.html
-│
-├───images
-│       armyblues-epk2021.jpg
-│       black-hole.PNG
-│       dizzy.jpg
-│       ellington.jpg
-│       michael-army.jpg
-│       michael-speech.jpg
-│       michael1.PNG
-│       michael2.PNG
-│       pie-face1.jpg
-│       pie-face2.jpg
-│       superstringlogo.PNG
-│       triangles.PNG
-└───videos
-intro.mp4
+    │
+    ├───images
+    │       armyblues-epk2021.jpg
+    │       black-hole.PNG
+    │       dizzy.jpg
+    │       ellington.jpg
+    │       michael-army.jpg
+    │       michael-speech.jpg
+    │       michael1.PNG
+    │       michael2.PNG
+    │       pie-face1.jpg
+    │       pie-face2.jpg
+    │       superstringlogo.PNG
+    │       triangles.PNG
+    └───videos
+            intro.mp4
 ```
