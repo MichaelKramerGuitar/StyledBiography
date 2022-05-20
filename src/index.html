@@ -5,10 +5,12 @@
         <meta charset="UTF-8">
         <!-- important for responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--style sheet-->
+        <link rel="stylesheet" href="styles/style.css">
         <title>Michael Kramer Home</title>
     </head>
     <body>
-        <div>
+        <div class="nav">
             <nav>
                 <a href="index.html">Home</a> |
                 <a href="army.html">Army Career</a> |
@@ -18,24 +20,17 @@
                 <a href="blog.html">Blog</a>
             </nav>
         </div>
-        <section>
-            <!-- visual divider -->
-            <svg viewBox="0 0 1 .01" xmlns="http://www.w3.org/2000/svg">
-                <rect width="1" height=".01">
-                    <animate attributeName="rx" values="0;1;0" dur="10s" repeatCount="indefinite" />
-                </rect>
-            </svg>
-            <h1>Video Introduction</h1>
+        <section class="introduction">
             <video src="videos/intro.mp4"
                    poster="images/michael1.PNG"
-                   style="width: 50%; height: 50%"
-                   preload controls loop>
+                   preload controls loop
+                    id="intro-vid">
                 <p>My time at BU</p>
             </video>
         </section>
-        <article>
+        <article class="story">
             <h2>Michael's Story</h2>
-            <p>
+            <p class="story-p">
                 Michael Kramer is a Washington, DC native. He is a member of the United States Army Band,
                 "Pershing's Own", The U.S. Army Blues Jazz Ensemble and also an active freelance musician
                 and bandleader in the Washington, D.C. area. In addition to playing guitar, Michael enjoys
@@ -49,16 +44,9 @@
                 University Online in the Summer 1, 2022 term.
             </p>
         </article>
-        <section>
-            <!-- visual divider -->
-            <svg viewBox="0 0 1 .01" xmlns="http://www.w3.org/2000/svg">
-                <rect width="1" height=".01">
-                    <animate attributeName="rx" values="0;1;0" dur="10s" repeatCount="indefinite" />
-                </rect>
-            </svg>
-            <h2>Boston University MSSD Takeaways</h2>
-
+        <section class="takeaways">
             <table>
+                <caption>Boston University MSSD Takeaways</caption>
                 <thead>
                     <tr>
                         <th>Course Number</th>
@@ -123,20 +111,9 @@
                         <td>In progress!</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4"> Courses and most important takeaways </td>
-                    </tr>
-                </tfoot>
             </table>
-            <!-- visual divider -->
-            <svg viewBox="0 0 1 .01" xmlns="http://www.w3.org/2000/svg">
-                <rect width="1" height=".01">
-                    <animate attributeName="rx" values="0;1;0" dur="10s" repeatCount="indefinite" />
-                </rect>
-            </svg>
         </section>
-        <footer>
+        <footer class="copyright">
             <small>Michael Kramer &copy; 2022 All Rights Reserved</small>
         </footer>
     </body>

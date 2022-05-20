@@ -92,8 +92,8 @@ three (3) page website and style it according to the requirements outlined below
 │   freelance.html
 │   index.html
 │   speech.html
-    │
-    ├───images
+│
+└───├───images
     │       armyblues-epk2021.jpg
     │       black-hole.PNG
     │       dizzy.jpg

@@ -1,0 +1,125 @@
+/*HEX: #eaece5*/
+
+/*HEX: #b2c2bf*/
+
+/*HEX: #c0ded9*/
+
+/*HEX: #3b3a30*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+.nav {
+    text-align: center;
+    background-color: #eaece5;
+    padding-bottom: 1em;
+
+}
+
+h1 {
+    text-align: left;
+    margin-left: 2em;
+    padding-bottom: 1em;
+}
+h2 {
+    text-align: left;
+    margin-left: 2em;
+    padding-bottom: 1em;
+}
+.introduction {
+    margin-inline-end: auto;
+    background-color: rgb(220,231,243);
+}
+
+/* intro video index.html */
+video {
+    display: block;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* hover over video it gets bigger and shadow - https://css-tricks.com/3d-text-tower/ */
+video:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform:    scale(1.05);
+    -ms-transform:     scale(1.05);
+    -o-transform:      scale(1.05);
+    text-shadow: 3px 3px 0 #333;
+    transition-duration: .5s;
+}
+
+.story {
+    background-color: rgb(161,192,224);
+}
+
+.story:hover {
+    text-shadow: 2px 2px 4px grey;
+    transition-duration: .5s;
+}
+
+.takeaways {
+    color: #ffffff;
+    background-color: #3b3a30;
+    padding-bottom: 1.5em;
+}
+
+.copyright {
+    background-color: #eaece5;
+    text-align: center;
+    padding-top: .5em;
+}
+
+article {
+
+    margin-inline: auto;
+    color: #fff;
+    border: 2px solid rgb(73,133,194);
+    border-radius: 0.25rem;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* https://codeshack.io/html-styling-tables-example/ */
+table {
+    border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin-inline: auto;
+}
+caption {
+    text-align: left;
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+table td {
+    padding: .5em;
+}
+
+table thead td {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid #54585d;
+}
+table tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+}
+table tbody tr {
+    background-color: #f9fafb;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
