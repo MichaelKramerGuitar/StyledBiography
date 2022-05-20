@@ -1,10 +1,3 @@
-/*HEX: #eaece5*/
-
-/*HEX: #b2c2bf*/
-
-/*HEX: #c0ded9*/
-
-/*HEX: #3b3a30*/
 
 * {
     box-sizing: border-box;
@@ -31,9 +24,10 @@ h2 {
     margin-left: 2em;
     padding-bottom: 1em;
 }
-.introduction {
+.introduction, .story {
     margin-inline-end: auto;
-    background-color: rgb(220,231,243);
+    /*background-color: rgb(220,231,243);*/
+    background-image: linear-gradient(rgb(220,231,243), rgb(73,133,194));
 }
 
 /* intro video index.html */
@@ -58,10 +52,15 @@ video:hover {
 }
 
 .story {
-    background-color: rgb(161,192,224);
+    background-image: linear-gradient(rgb(73,133,194), rgb(220,231,243));
 }
 
 .story:hover {
+    -webkit-transform: scale(1.01);
+    -moz-transform:    scale(1.01);
+    -ms-transform:     scale(1.01);
+    -o-transform:      scale(1.01);
+    transition-duration: .5s;
     text-shadow: 2px 2px 4px grey;
     transition-duration: .5s;
 }
@@ -83,7 +82,7 @@ article {
     margin-inline: auto;
     color: #fff;
     border: 2px solid rgb(73,133,194);
-    border-radius: 0.25rem;
+    /*border-radius: 0.25rem;*/
     padding: 2vw;
     background-color: rgba(255, 255, 255, 0.15);
 }
