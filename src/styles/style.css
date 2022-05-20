@@ -1,3 +1,4 @@
+/* BEM Block, element, modifier */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,11 +8,81 @@ body {
     font-family: system-ui, sans-serif;
 }
 
+/* Nav source modified from: https://codepen.io/maheshambure21/pen/QwXaRw */
 nav {
-    text-align: center;
-    background-color: #eaece5;
-    padding-bottom: 1em;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1em;
+    box-shadow: #dedede;
 }
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .25em;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 600; /* semi-bold */
+    font-size: small;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+nav ul li a:hover {
+    color: #555;
+}
+
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+/* end nav source */
+
+/*nav {*/
+/*    position: relative;*/
+/*    text-align: center;*/
+/*    background-color: #eaece5;*/
+/*    padding-bottom: 1em;*/
+/*    !*position: absolute;*!*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    width: 0%;*/
+/*    content: '.';*/
+/*    color: transparent;*/
+/*    !*background: #aaa;*!*/
+/*    height: 1px;*/
+/*}*/
 
 h1, h2 {
     text-align: left;
@@ -36,6 +107,7 @@ video, img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 /* hover over video it gets bigger and shadow - https://css-tricks.com/3d-text-tower/ */
 video:hover, img:hover {
     -webkit-transform: scale(1.05);
@@ -56,7 +128,15 @@ video:hover, img:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-article:hover, .story:hover, tr:hover {
+article:hover,
+.story:hover,
+h1:hover,
+h2:hover,
+p:hover,
+tr:hover,
+li:hover,
+iframe:hover,
+form:hover {
     -webkit-transform: scale(1.01);
     -moz-transform:    scale(1.01);
     -ms-transform:     scale(1.01);
@@ -64,6 +144,10 @@ article:hover, .story:hover, tr:hover {
     transition-duration: .5s;
     text-shadow: 2px 2px 4px lightgrey;
     transition-duration: .5s;
+}
+
+h1:hover, h2:hover {
+    color: #9d3b2c;
 }
 
 /* table on index.html */
@@ -80,13 +164,15 @@ footer {
     padding-top: .5em;
 }
 
-article {
+article, article ul {
     display: block;
     margin: auto;
     padding: 2em;
 }
 
-/* https://codeshack.io/html-styling-tables-example/ */
+
+/* table style heavily inspire by:
+https://codeshack.io/html-styling-tables-example/ */
 table {
     border-collapse: collapse;
     font-family: 'Fredericka the Great', cursive;
@@ -121,6 +207,28 @@ table tbody td {
 table tbody tr {
     background-color: #f9fafb;
 }
+
 table tbody tr:nth-child(odd) {
     background-color: #ffffff;
+}
+
+textarea, input {
+    margin: auto;
+    color: #aaa;
+}
+
+form {
+    padding: 2em;
+}
+
+/*
+attention grabbing rotation inspired by
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_transform
+ */
+@keyframes rotate-object {
+    100% {transform: rotate(360deg);}
+}
+
+.rotation {
+        animation: rotate-object 3s;
 }
