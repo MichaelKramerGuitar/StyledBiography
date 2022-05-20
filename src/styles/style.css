@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,31 +6,27 @@
 body {
     font-family: system-ui, sans-serif;
 }
-.nav {
+
+nav {
     text-align: center;
     background-color: #eaece5;
     padding-bottom: 1em;
-
 }
 
-h1 {
+h1, h2 {
     text-align: left;
     margin-left: 2em;
     padding-bottom: 1em;
 }
-h2 {
-    text-align: left;
-    margin-left: 2em;
-    padding-bottom: 1em;
-}
-.introduction, .story {
+
+/* intro article section with video index.html */
+.introduction {
     margin-inline-end: auto;
-    /*background-color: rgb(220,231,243);*/
     background-image: linear-gradient(rgb(220,231,243), rgb(73,133,194));
 }
 
 /* intro video index.html */
-video {
+video, img {
     display: block;
     margin: auto;
     padding-top: 2em;
@@ -42,7 +37,7 @@ video {
 }
 
 /* hover over video it gets bigger and shadow - https://css-tricks.com/3d-text-tower/ */
-video:hover {
+video:hover, img:hover {
     -webkit-transform: scale(1.05);
     -moz-transform:    scale(1.05);
     -ms-transform:     scale(1.05);
@@ -51,48 +46,53 @@ video:hover {
     transition-duration: .5s;
 }
 
+/* article on index.html */
 .story {
     background-image: linear-gradient(rgb(73,133,194), rgb(220,231,243));
+    color: white;
+    margin-inline: auto;
+    border: 2px solid rgb(73,133,194);
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-.story:hover {
+article:hover, .story:hover, tr:hover {
     -webkit-transform: scale(1.01);
     -moz-transform:    scale(1.01);
     -ms-transform:     scale(1.01);
     -o-transform:      scale(1.01);
     transition-duration: .5s;
-    text-shadow: 2px 2px 4px grey;
+    text-shadow: 2px 2px 4px lightgrey;
     transition-duration: .5s;
 }
 
+/* table on index.html */
 .takeaways {
+
     color: #ffffff;
     background-color: #3b3a30;
     padding-bottom: 1.5em;
 }
 
-.copyright {
+footer {
     background-color: #eaece5;
     text-align: center;
     padding-top: .5em;
 }
 
 article {
-
-    margin-inline: auto;
-    color: #fff;
-    border: 2px solid rgb(73,133,194);
-    /*border-radius: 0.25rem;*/
-    padding: 2vw;
-    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    margin: auto;
+    padding: 2em;
 }
 
 /* https://codeshack.io/html-styling-tables-example/ */
 table {
     border-collapse: collapse;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: 'Fredericka the Great', cursive;
     margin-inline: auto;
 }
+
 caption {
     text-align: left;
     margin-left: 2em;
@@ -101,6 +101,8 @@ caption {
     margin-top: .5em;
     margin-bottom: 1em;
 }
+
+
 table td {
     padding: .5em;
 }
