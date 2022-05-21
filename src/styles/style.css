@@ -224,13 +224,15 @@ form {
 /*
 attention grabbing rotation inspired by
 https://www.w3schools.com/cssref/tryit.asp?filename=trycss_anim_transform
+
+define an animation
  */
 @keyframes rotate-object {
     100% {transform: rotate(360deg);}
 }
 
 .rotation {
-        animation: rotate-object 3s;
+        animation: rotate-object 3s; /* use self-defined animation */
 }
 
 /* hide figure captions but keep html them in for image source links */
