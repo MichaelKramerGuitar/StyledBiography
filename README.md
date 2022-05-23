@@ -1,3 +1,7 @@
+# Author:
+## Michael Kramer
+### mgkramer@bu.edu
+
 # Web Application Development Assignment 1: Styled Biography
 
 ## Requirements
