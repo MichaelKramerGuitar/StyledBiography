@@ -1,27 +1,18 @@
 /*
-Look up media queries
-Look up grid layout
-Put above and beyond in readme
-look up tailwind - can use tailwind but not TAILWIND COMPONENTS
- */
-
-/*
+Links from facilitator Josh Hanson:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout
 https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
 https://www.w3schools.com/css/css_rwd_intro.asp
-
  */
-
-
 /*
- media queries
+ media queries adapted from:
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
  */
 
 @media screen and (max-width: 640px){
 
     /*
-    make tables smaller on phones
+    make tables smaller on phones, mobile first
      */
     table {
         font-size: .5em;
@@ -30,11 +21,8 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
     img, figure, aside {
         display: none;
     }
-    aside {
-        padding-left: 2em;
-    }
     article {
-        padding-left: 2em;
+        margin: 1em;
     }
 
 }
@@ -60,7 +48,8 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
 }
 
 
-@media screen and (min-width: 1000px) { /* bigger than ipads, larger monitor range */
+@media screen and (min-width: 1000px) {
+    /* larger tablets, monitor range */
 
         /* enlarge font for a bigger screen, more padding */
         article, .introduction, .speech {
@@ -71,7 +60,7 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
 
 @media print {
 
-    header, footer, img, video, aside, section, figure, svg {
+    header, footer, img, video, aside, section, figure, form, svg {
         display: none;
     }
     article {
@@ -81,16 +70,13 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
         color: black;
     }
 }
-/* BEM Block, element, modifier */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
 
-}
+/* BEM Block, element, modifier philosophy */
 
 body {
     font-family: system-ui, sans-serif;
+    margin: 1em;
 
 }
 
@@ -100,8 +86,8 @@ nav {
     margin: 0 auto;
     background: #fff;
     padding: 1em;
-    /*box-shadow: #dedede;*/
 }
+
 nav ul {
     list-style: none;
     text-align: center;
@@ -157,20 +143,21 @@ h1, h2 {
     text-align: left;
     margin-left: 2em;
     padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 /* intro article section with video index.html */
 .introduction {
     margin-inline-end: auto;
-    background-image: linear-gradient(rgb(220,231,243), rgb(73,133,194));
+    /*background-image: linear-gradient(rgb(220,231,243), rgb(73,133,194));*/
+    background-image: linear-gradient(rgb(73,133,194), rgb(220,231,243));
+    color: white;
 }
 
 /* intro video index.html */
 video, img {
     display: block;
     margin: auto;
-    /*padding-top: 2em;*/
-    /*padding-bottom: 1em;*/
     width: 50%;
     height: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -190,10 +177,10 @@ video:hover, img:hover {
 
 /* article on index.html */
 .story {
-    background-image: linear-gradient(rgb(73,133,194), rgb(220,231,243));
+
     color: white;
     margin-inline: auto;
-    border: 2px solid rgb(73,133,194);
+    /*border: 2px solid rgb(73,133,194);*/
     padding: 2vw;
     background-color: rgba(255, 255, 255, 0.15);
 }
@@ -242,8 +229,11 @@ article, article ul {
     padding: 2em;
 }
 
+article {
+    margin: 2em;
+}
 
-/* table style heavily inspire by:
+/* table style heavily inspired by:
 https://codeshack.io/html-styling-tables-example/ */
 table {
     border-collapse: collapse;
@@ -314,3 +304,6 @@ figcaption {
 aside {
     padding: 3em;
 }
+
+
+

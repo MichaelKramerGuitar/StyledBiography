@@ -41,6 +41,29 @@ three (3) page website and style it according to the requirements outlined below
   * all images belong to Michael Kramer unless otherwise noted
   * all input is mock/prototyping as Javascript was not allowed for this assignment 
 
+# How this work is above and beyond the given requirements
+* multiple css concepts were researched and applied
+  * flex
+  * grid
+    * These concepts were used sparingly (for example in the nav media queries) but informed this work greatly 
+* A lot of effort was put into a responsive and interactive experience that is not overbearing
+  * Much of this came to fruition with mouse hovering
+    * Since the content is text heavy I wanted to give a more engaging experience with the text
+    * Having the text change color (headings) and font as you mouse over and read it
+* I became interested in primitive animations as "eye grabbers"
+  * In the ```speech.html page``` I grabbed the heading and the corresponding link in the Quick Links and rotate them upon loading the page 
+    * This indicates to the user the most important text on the page
+  * The same technique is used in ```blog.html``` and ```foundational-melodies.html```
+* Research was put into look and feel of other blogs I admire such as [Tim Ferris' Blog](https://tim.blog/)
+  * Additionally, I was influenced by [my own site](https://michaelkramerguitar.com/) and my day job, [The U.S. Army Band](https://www.usarmyband.com/) website
+    * I made layout decisions based on those three sources primarily 
+    * photos and video placement was most heavily influenced by The U.S. Army Band site. 
+    * Text was mostly influenced by Ferris' Blog.
+* I additionally researched [color pallets](https://colorhunt.co/) and after much playing decided to leave the feel very minimal 
+  * I found this most effective
+  * One exception is index.html
+    * Notably, this point applies to css [background textures](https://css-tricks.com/a-few-background-patterns-sites/) as well. 
+
 # Project Concept
 * Give an overall impression of who I am and where I'm at professionally and as a student wrapping up his masters in software development
 * Share information about my career as a musician in the army
@@ -49,67 +72,26 @@ three (3) page website and style it according to the requirements outlined below
 * Share information about my concept on how to develop as a jazz musician
 * Start to workshop the idea of a regular blog 
 
-# Tags Key: first three pages for easy searching 
-* (obvious tags like ```<title>, <meta>, <header>, <body>, <footer>, <div> ``` not included in key)
-
-## index.html
-1. ```<section>```
-2. ```<ul>```
-3. ```<li>```
-4. ```<img>```
-5. ```<video>```
-6. ```<article>```
-7. ```<table>```
-8. ```<thead>```
-9. ```<tbody>```
-10. ```<tfoot>```
-11. ```<tr>```
-12. ```<td>```
-13. ```<small>```
-
-## army.html
-1. ```<figure>```
-2. ```<figcaption>```
-3. ```<main>```
-4. ```<iframe>```
-5. ```<abbr>```
-   * note: TUSAB in ```<h1>```
-     * hovering over shows title attribute
-6. ````<aside>````
-
-## freelance.html
-1. ```<form>```
-2. ```<label>```
-3. ```<input>```
-4. ```<textarea>```
-5. ```<button>```
-6. ```<b>```
-7. ```<i>```
-8. ```<cite>```
 
 # File Structure
 ```html
-└───html
-│   army.html
-│   blog.html
-│   foundational-melodies.html
-│   freelance.html
-│   index.html
-│   speech.html
-│
-└───├───images
-    │       armyblues-epk2021.jpg
-    │       black-hole.PNG
-    │       dizzy.jpg
-    │       ellington.jpg
-    │       michael-army.jpg
-    │       michael-speech.jpg
-    │       michael1.PNG
-    │       michael2.PNG
-    │       pie-face1.jpg
-    │       pie-face2.jpg
-    │       superstringlogo.PNG
-    │       triangles.PNG
+└───src
+    │   index.html
+    │
+    ├───html
+    │       army.html
+    │       blog.html
+    │       foundational-melodies.html
+    │       freelance.html
+    │       speech.html
+    │
+    ├───images
+    |   *image-assets-here
+    │
+    ├───styles
+    │       style.css
+    │
     └───videos
-            intro.mp4
+        *video-assets-here
+
 ```
